@@ -1,11 +1,105 @@
-﻿<!DOCTYPE html>
+
+<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Безвоздушная покраска в Бресте</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  
+  
+  
   <style>
+    form input, form textarea {
+      padding: 10px;
+      width: 100%;
+      font-family: 'Inter', sans-serif;
+    }
+
+    form button {
+      transition: background-color 0.3s ease;
+    }
+
+    form button:hover {
+      background-color: #a53c30;
+    }
+
+    button:hover {
+      background-color: #a53c30;
+    }
+
+    section h2 {
+      margin-bottom: 1.2em;
+    }
+
+    .section-title i {
+      transform: scale(1.2);
+      vertical-align: middle;
+    }
+
+    section {
+      padding: 4em 2em;
+      margin: 3em auto;
+      max-width: 960px;
+      background: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+    }
+
+    header, footer {
+      padding: 2.5em 1.5em;
+    }
+
+    form input, form textarea {
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    form button {
+      font-size: 16px;
+    }
+
+    body {
+      background-color: #f9f7f4;
+    }
+
+    header {
+  background: url('header_bg_compressed.jpg') no-repeat center center;
+  background-size: cover;
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+
+      background-color: #c94d3f;
+      color: white;
+    }
+
+    nav a {
+      color: white;
+    }
+
+    section {
+      background: #ffffff;
+      padding: 3em 1em;
+      margin: 2em auto;
+      max-width: 1000px;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    }
+
+    h1, h2, h3 {
+      color: #c94d3f;
+    }
+
+    button {
+      background-color: #c94d3f;
+    }
+
+    footer {
+      background-color: #2f2f2f;
+    }
+
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
@@ -13,10 +107,33 @@
       color: #333;
     }
     header {
+  background: url('header_bg_compressed.jpg') no-repeat center center;
+  background-size: cover;
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+
       background-color: #b2512b;
       color: white;
       padding: 1.5em;
       text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1em;
+      margin-top: 1em;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
     }
     section {
       padding: 2em 1.5em;
@@ -29,18 +146,22 @@
     .button {
       background-color: #b2512b;
       color: white;
-      padding: 0.7em 1.5em;
+      padding: 1em 1.5em;
       border: none;
       cursor: pointer;
-      font-size: 1em;
+      font-size: 1.1em;
       margin-top: 1em;
+      width: 100%;
+      max-width: 300px;
+      display: block;
     }
     form input, form textarea {
       width: 100%;
-      padding: 0.8em;
+      padding: 1em;
       margin: 0.5em 0;
       border: 1px solid #ccc;
       border-radius: 5px;
+      font-size: 1em;
     }
     footer {
       background-color: #eee;
@@ -56,7 +177,6 @@
       margin-bottom: 0.3em;
     }
 
-    /* Анимация */
     .animate {
       opacity: 0;
       transform: translateY(30px);
@@ -66,31 +186,455 @@
       opacity: 1;
       transform: translateY(0);
     }
+
+    .call-button, .telegram-button {
+      margin-top: 1.5em;
+      display: inline-block;
+      padding: 1em 1.5em;
+      background-color: #b2512b;
+      color: white;
+      font-size: 1.2em;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-right: 1em;
+    }
+
+    .banner {
+      background: #e6e2dc;
+      padding: 2em;
+      text-align: center;
+      margin: 2em 0;
+      border-radius: 10px;
+    }
+
+    .banner h3 {
+      font-size: 1.8em;
+      margin-bottom: 0.5em;
+    }
+
+    .banner a {
+      display: inline-block;
+      margin-top: 1em;
+      background-color: #b2512b;
+      color: white;
+      padding: 0.8em 1.4em;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 1.1em;
+    }
+
   </style>
+
+  
+  
+  
+  <style>
+    form input, form textarea {
+      padding: 10px;
+      width: 100%;
+      font-family: 'Inter', sans-serif;
+    }
+
+    form button {
+      transition: background-color 0.3s ease;
+    }
+
+    form button:hover {
+      background-color: #a53c30;
+    }
+
+    button:hover {
+      background-color: #a53c30;
+    }
+
+    section h2 {
+      margin-bottom: 1.2em;
+    }
+
+    .section-title i {
+      transform: scale(1.2);
+      vertical-align: middle;
+    }
+
+    section {
+      padding: 4em 2em;
+      margin: 3em auto;
+      max-width: 960px;
+      background: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+    }
+
+    header, footer {
+      padding: 2.5em 1.5em;
+    }
+
+    form input, form textarea {
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    form button {
+      font-size: 16px;
+    }
+
+    body {
+      background-color: #f9f7f4;
+    }
+
+    header {
+  background: url('header_bg_compressed.jpg') no-repeat center center;
+  background-size: cover;
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+
+      background-color: #c94d3f;
+      color: white;
+    }
+
+    nav a {
+      color: white;
+    }
+
+    section {
+      background: #ffffff;
+      padding: 3em 1em;
+      margin: 2em auto;
+      max-width: 1000px;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    }
+
+    h1, h2, h3 {
+      color: #c94d3f;
+    }
+
+    button {
+      background-color: #c94d3f;
+    }
+
+    footer {
+      background-color: #2f2f2f;
+    }
+
+    #faq div {
+      display: grid;
+      gap: 1em;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    #faq p {
+      background: #f6f6f6;
+      padding: 1em 1.5em;
+      border-left: 4px solid #c94d3f;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      font-size: 1em;
+      border-radius: 4px;
+    }
+
+    #faq p strong {
+      display: block;
+      margin-bottom: 0.5em;
+      color: #444;
+    }
+  </style>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  
+  
+  
+  <style>
+    form input, form textarea {
+      padding: 10px;
+      width: 100%;
+      font-family: 'Inter', sans-serif;
+    }
+
+    form button {
+      transition: background-color 0.3s ease;
+    }
+
+    form button:hover {
+      background-color: #a53c30;
+    }
+
+    button:hover {
+      background-color: #a53c30;
+    }
+
+    section h2 {
+      margin-bottom: 1.2em;
+    }
+
+    .section-title i {
+      transform: scale(1.2);
+      vertical-align: middle;
+    }
+
+    section {
+      padding: 4em 2em;
+      margin: 3em auto;
+      max-width: 960px;
+      background: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+    }
+
+    header, footer {
+      padding: 2.5em 1.5em;
+    }
+
+    form input, form textarea {
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    form button {
+      font-size: 16px;
+    }
+
+    body {
+      background-color: #f9f7f4;
+    }
+
+    header {
+  background: url('header_bg_compressed.jpg') no-repeat center center;
+  background-size: cover;
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+
+      background-color: #c94d3f;
+      color: white;
+    }
+
+    nav a {
+      color: white;
+    }
+
+    section {
+      background: #ffffff;
+      padding: 3em 1em;
+      margin: 2em auto;
+      max-width: 1000px;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    }
+
+    h1, h2, h3 {
+      color: #c94d3f;
+    }
+
+    button {
+      background-color: #c94d3f;
+    }
+
+    footer {
+      background-color: #2f2f2f;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    h1, h2, h3 {
+      font-weight: 600;
+      color: #c94d3f;
+    }
+  </style>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-pW9z+T1N/VB5DrwEv2ZrxzK7flhA4kUK3Z0aS0AqN6UlGXY0uXzgDkDrFMeFQ51y0HJcKcsx+MEIpJbqN0V1yQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  
+  <style>
+    form input, form textarea {
+      padding: 10px;
+      width: 100%;
+      font-family: 'Inter', sans-serif;
+    }
+
+    form button {
+      transition: background-color 0.3s ease;
+    }
+
+    form button:hover {
+      background-color: #a53c30;
+    }
+
+    button:hover {
+      background-color: #a53c30;
+    }
+
+    section h2 {
+      margin-bottom: 1.2em;
+    }
+
+    .section-title i {
+      transform: scale(1.2);
+      vertical-align: middle;
+    }
+
+    section {
+      padding: 4em 2em;
+      margin: 3em auto;
+      max-width: 960px;
+      background: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+    }
+
+    header, footer {
+      padding: 2.5em 1.5em;
+    }
+
+    form input, form textarea {
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    form button {
+      font-size: 16px;
+    }
+
+    .section-title {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s ease-out;
+    }
+
+    .section-title.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    h2 i {
+      margin-right: 10px;
+      color: #c94d3f;
+    }
+  </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const options = {
+        threshold: 0.1
+      };
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, options);
+      document.querySelectorAll('.section-title').forEach(el => observer.observe(el));
+    });
+  </script>
+
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
+
+
+
+
 <body>
 
   <header>
-    <h1>Профессиональная безвоздушная покраска</h1>
-    <p>Быстро. Качественно. Современно. Брест и область.</p>
+    <h1>Безвоздушная покраска</h1>
+    <p>Брест и область — быстро и качественно</p>
+    <nav>
+      <a href="#about">О нас</a>
+      <a href="#services">Услуги</a>
+      <a href="#steps">Этапы</a>
+      <a href="#faq">Вопросы</a>
+      <a href="#consultation">Консультация</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
   </header>
 
   <section id="about" class="animate">
-    <h2>О нас</h2>
-    <p>Мы — команда специалистов с опытом более 5 лет в области безвоздушной покраски. Работаем с жилыми, коммерческими и промышленными объектами.</p>
+    <h2 class='section-title'><i class='fas fa-users'></i>О нас</h2>
+    <p>Мы — молодая, но амбициозная команда, специализирующаяся на безвоздушной покраске промышленных объектов, складов и технических помещений. Несмотря на то, что мы только начинаем развиваться, за нашими плечами уже есть реальные объекты и довольные клиенты.</p>
+    <p>Мы ценим аккуратность, работаем слаженно и всегда остаёмся на связи с заказчиком. Чёткое выполнение сроков, внимание к деталям и гибкий подход — это то, что нас отличает.</p>
   </section>
 
   <section id="services" class="animate">
     <h2>Услуги</h2>
     <ul>
-      <li>Покраска стен и потолков</li>
-      <li>Фасадные работы</li>
-      <li>Промышленная покраска</li>
-      <li>Подготовка поверхностей</li>
+      <li><strong>Промышленные помещения</strong> — стены, потолки, металлические и бетонные поверхности</li>
+      <li><strong>Склады и ангары</strong> — внутренняя и внешняя окраска с высокой скоростью выполнения</li>
+      <li><strong>Технические помещения и цеха</strong> — устойчивые покрытия, простота в уходе</li>
+      <li><strong>Подготовка поверхностей</strong> — зачистка, грунтовка, обеспыливание</li>
     </ul>
+    <p>Также возможны нестандартные работы — уточняйте при звонке.</p>
+  </section>
+
+  <div class="banner">
+    <h3>Нужна покраска?</h3>
+    <p>Позвоните — обсудим задачу и предложим оптимальное решение.</p>
+    <a href="tel:+375298261020">Позвонить сейчас</a>
+  </div>
+
+  
+  <section id="materials" class="animate">
+    <h2>Материалы и техника</h2>
+    <p>Мы используем современное безвоздушное оборудование, которое обеспечивает равномерное и быстрое нанесение краски на большие площади.</p>
+    <p>В работе применяем только проверенные краски и грунты, подходящие под разные типы поверхностей — бетон, металл, дерево и др. Состав подбирается индивидуально, в зависимости от условий эксплуатации и требований к покрытию.</p>
+    <p>Все материалы экологичны, долговечны и безопасны для производственных помещений.</p>
+  </section>
+
+  
+  
+  <section id="workflow" class="animate">
+    <h2>Как мы работаем</h2>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2em; text-align: center;">
+      <div style="flex: 1 1 200px;">
+        <img src="https://cdn-icons-png.flaticon.com/512/5976/5976622.png" alt="связь" width="60">
+        <p><strong>1. Связь</strong><br>Звонок или Telegram</p>
+      </div>
+      <div style="flex: 1 1 200px;">
+        <img src="https://cdn-icons-png.flaticon.com/512/1063/1063313.png" alt="оценка" width="60">
+        <p><strong>2. Оценка</strong><br>Выезд и расчёт стоимости</p>
+      </div>
+      <div style="flex: 1 1 200px;">
+        <img src="https://cdn-icons-png.flaticon.com/512/3602/3602123.png" alt="договор" width="60">
+        <p><strong>3. Договор</strong><br>Подписание условий</p>
+      </div>
+      <div style="flex: 1 1 200px;">
+        <img src="https://cdn-icons-png.flaticon.com/512/3004/3004613.png" alt="работа" width="60">
+        <p><strong>4. Работы</strong><br>Покраска по графику</p>
+      </div>
+      <div style="flex: 1 1 200px;">
+        <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" alt="сдача" width="60">
+        <p><strong>5. Сдача</strong><br>Чистый готовый объект</p>
+      </div>
+    
+      <p><strong>Какой тип краски используете?</strong><br>Подбираем под задачу — влагостойкие, антикоррозийные, износостойкие и другие, в зависимости от объекта.</p>
+      <p><strong>Нужно ли готовить помещение?</strong><br>Желательно убрать лишние предметы и обеспечить доступ к поверхностям. Остальное подготовим сами.</p>
+      <p><strong>Можно ли нанести несколько слоёв?</strong><br>Да, при необходимости наносим два и более слоёв с соблюдением технологии.</p>
+    </div>
+  </section>
+
+
+    <h2>Как мы работаем</h2>
+    <ol>
+      <li><strong>Связь с нами</strong> — звонок или сообщение в Telegram</li>
+      <li><strong>Выезд и оценка</strong> — приезжаем, осматриваем объект, рассчитываем стоимость</li>
+      <li><strong>Подписание договора</strong> — фиксируем объём, сроки и стоимость работ</li>
+      <li><strong>Проведение покраски</strong> — начинаем работу строго по плану</li>
+      <li><strong>Сдача объекта</strong> — уборка и передача готового результата</li>
+    </ol>
   </section>
 
   <section id="steps" class="animate">
+
+
     <h2>Этапы работ</h2>
     <ol>
       <li>Консультация и замер</li>
@@ -110,8 +654,13 @@
     <div class="faq-item">
       <strong>Какие материалы вы используете?</strong>
       <p>Только проверенные бренды, подходящие под задачи клиента.</p>
+    
+      <p><strong>Какой тип краски используете?</strong><br>Подбираем под задачу — влагостойкие, антикоррозийные, износостойкие и другие, в зависимости от объекта.</p>
+      <p><strong>Нужно ли готовить помещение?</strong><br>Желательно убрать лишние предметы и обеспечить доступ к поверхностям. Остальное подготовим сами.</p>
+      <p><strong>Можно ли нанести несколько слоёв?</strong><br>Да, при необходимости наносим два и более слоёв с соблюдением технологии.</p>
     </div>
   </section>
+
 
   <section id="consultation" class="animate">
     <h2>Бесплатная консультация</h2>
@@ -126,9 +675,11 @@
 
   <section id="contacts" class="animate">
     <h2>Контакты</h2>
-    <p>Телефон: +375 (29) 826-10-20</p>
-    <p>Email: TriSoroki@yandex.by</p>
+    <p>Телефон: <a href="tel:+375298261020">+375 (29) 826-10-20</a></p>
+    <p>Email: <a href="mailto:TriSoroki@yandex.by">TriSoroki@yandex.by</a></p>
     <p>Город: Брест и область</p>
+    <a class="call-button" href="tel:+375298261020">Позвонить сейчас</a>
+    <a class="telegram-button" href="https://t.me/Mng_Dzmitrii" target="_blank">Написать в Telegram</a>
   </section>
 
   <footer>
@@ -137,7 +688,6 @@
 
   <script>
     const animatedItems = document.querySelectorAll('.animate');
-
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -145,14 +695,21 @@
           observer.unobserve(entry.target);
         }
       });
-    }, {
-      threshold: 0.1
-    });
+    }, { threshold: 0.1 });
 
-    animatedItems.forEach(item => {
-      observer.observe(item);
-    });
+    animatedItems.forEach(item => observer.observe(item));
   </script>
 
+
+  <footer style="background: #333; color: white; text-align: center; padding: 2em 1em; margin-top: 4em;">
+    <p>&copy; 2025 Безвоздушная покраска | Брест и область</p>
+    <p>Тел: +375 29 826 10 20 | Email: TriSoroki@yandex.by | Telegram: @Mng_Dzmitrii</p>
+  </footer>
+
+  <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" 
+    style="position: fixed; bottom: 20px; right: 20px; padding: 10px 15px; border: none; background: #c94d3f; color: white; border-radius: 4px; cursor: pointer;">
+    ↑ Наверх
+  </button>
 </body>
+
 </html>
