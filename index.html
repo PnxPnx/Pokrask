@@ -10,517 +10,78 @@
   
   
   <style>
-    form input, form textarea {
-      padding: 10px;
-      width: 100%;
-      font-family: 'Inter', sans-serif;
-    }
-
-    form button {
-      transition: background-color 0.3s ease;
-    }
-
-    form button:hover {
-      background-color: #a53c30;
-    }
-
-    button:hover {
-      background-color: #a53c30;
-    }
-
-    section h2 {
-      margin-bottom: 1.2em;
-    }
-
-    .section-title i {
-      transform: scale(1.2);
-      vertical-align: middle;
-    }
-
-    section {
-      padding: 4em 2em;
-      margin: 3em auto;
-      max-width: 960px;
-      background: #ffffff;
-      border-radius: 8px;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.04);
-    }
-
-    header, footer {
-      padding: 2.5em 1.5em;
-    }
-
-    form input, form textarea {
-      margin-top: 5px;
-      margin-bottom: 15px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-
-    form button {
-      font-size: 16px;
-    }
-
-    body {
-      background-color: #f9f7f4;
-    }
-
-    header {
+header {
   background: url('header_bg_compressed.jpg') no-repeat center center;
   background-size: cover;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   color: white;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
-
-      background-color: #c94d3f;
-      color: white;
-    }
-
-    nav a {
-      color: white;
-    }
-
-    section {
-      background: #ffffff;
-      padding: 3em 1em;
-      margin: 2em auto;
-      max-width: 1000px;
-      border-radius: 6px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.03);
-    }
-
-    h1, h2, h3 {
-      color: #c94d3f;
-    }
-
-    button {
-      background-color: #c94d3f;
-    }
-
-    footer {
-      background-color: #2f2f2f;
-    }
-
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #f5f3f0;
-      color: #333;
-    }
-    header {
-  background: url('header_bg_compressed.jpg') no-repeat center center;
-  background-size: cover;
-  color: white;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
-
-      background-color: #b2512b;
-      color: white;
-      padding: 1.5em;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 1em;
-      margin-top: 1em;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    section {
-      padding: 2em 1.5em;
-      max-width: 1000px;
-      margin: auto;
-    }
-    h2 {
-      color: #b2512b;
-    }
-    .button {
-      background-color: #b2512b;
-      color: white;
-      padding: 1em 1.5em;
-      border: none;
-      cursor: pointer;
-      font-size: 1.1em;
-      margin-top: 1em;
-      width: 100%;
-      max-width: 300px;
-      display: block;
-    }
-    form input, form textarea {
-      width: 100%;
-      padding: 1em;
-      margin: 0.5em 0;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      font-size: 1em;
-    }
-    footer {
-      background-color: #eee;
-      text-align: center;
-      padding: 1em;
-      font-size: 0.9em;
-    }
-    .faq-item {
-      margin-bottom: 1em;
-    }
-    .faq-item strong {
-      display: block;
-      margin-bottom: 0.3em;
-    }
-
-    .animate {
-      opacity: 0;
-      transform: translateY(30px);
-      transition: all 0.6s ease-out;
-    }
-    .animate.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    .call-button, .telegram-button {
-      margin-top: 1.5em;
-      display: inline-block;
-      padding: 1em 1.5em;
-      background-color: #b2512b;
-      color: white;
-      font-size: 1.2em;
-      text-decoration: none;
-      border-radius: 5px;
-      margin-right: 1em;
-    }
-
-    .banner {
-      background: #e6e2dc;
-      padding: 2em;
-      text-align: center;
-      margin: 2em 0;
-      border-radius: 10px;
-    }
-
-    .banner h3 {
-      font-size: 1.8em;
-      margin-bottom: 0.5em;
-    }
-
-    .banner a {
-      display: inline-block;
-      margin-top: 1em;
-      background-color: #b2512b;
-      color: white;
-      padding: 0.8em 1.4em;
-      text-decoration: none;
-      border-radius: 5px;
-      font-size: 1.1em;
-    }
-
-  </style>
+  text-align: center;
+  padding: 2rem;
+  text-shadow: 0 0 10px rgba(0,0,0,0.6);
+}
+</style>
 
   
   
   
   <style>
-    form input, form textarea {
-      padding: 10px;
-      width: 100%;
-      font-family: 'Inter', sans-serif;
-    }
-
-    form button {
-      transition: background-color 0.3s ease;
-    }
-
-    form button:hover {
-      background-color: #a53c30;
-    }
-
-    button:hover {
-      background-color: #a53c30;
-    }
-
-    section h2 {
-      margin-bottom: 1.2em;
-    }
-
-    .section-title i {
-      transform: scale(1.2);
-      vertical-align: middle;
-    }
-
-    section {
-      padding: 4em 2em;
-      margin: 3em auto;
-      max-width: 960px;
-      background: #ffffff;
-      border-radius: 8px;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.04);
-    }
-
-    header, footer {
-      padding: 2.5em 1.5em;
-    }
-
-    form input, form textarea {
-      margin-top: 5px;
-      margin-bottom: 15px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-
-    form button {
-      font-size: 16px;
-    }
-
-    body {
-      background-color: #f9f7f4;
-    }
-
-    header {
+header {
   background: url('header_bg_compressed.jpg') no-repeat center center;
   background-size: cover;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   color: white;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
-
-      background-color: #c94d3f;
-      color: white;
-    }
-
-    nav a {
-      color: white;
-    }
-
-    section {
-      background: #ffffff;
-      padding: 3em 1em;
-      margin: 2em auto;
-      max-width: 1000px;
-      border-radius: 6px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.03);
-    }
-
-    h1, h2, h3 {
-      color: #c94d3f;
-    }
-
-    button {
-      background-color: #c94d3f;
-    }
-
-    footer {
-      background-color: #2f2f2f;
-    }
-
-    #faq div {
-      display: grid;
-      gap: 1em;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-
-    #faq p {
-      background: #f6f6f6;
-      padding: 1em 1.5em;
-      border-left: 4px solid #c94d3f;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-      font-size: 1em;
-      border-radius: 4px;
-    }
-
-    #faq p strong {
-      display: block;
-      margin-bottom: 0.5em;
-      color: #444;
-    }
-  </style>
+  text-align: center;
+  padding: 2rem;
+  text-shadow: 0 0 10px rgba(0,0,0,0.6);
+}
+</style>
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   
   
   
   <style>
-    form input, form textarea {
-      padding: 10px;
-      width: 100%;
-      font-family: 'Inter', sans-serif;
-    }
-
-    form button {
-      transition: background-color 0.3s ease;
-    }
-
-    form button:hover {
-      background-color: #a53c30;
-    }
-
-    button:hover {
-      background-color: #a53c30;
-    }
-
-    section h2 {
-      margin-bottom: 1.2em;
-    }
-
-    .section-title i {
-      transform: scale(1.2);
-      vertical-align: middle;
-    }
-
-    section {
-      padding: 4em 2em;
-      margin: 3em auto;
-      max-width: 960px;
-      background: #ffffff;
-      border-radius: 8px;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.04);
-    }
-
-    header, footer {
-      padding: 2.5em 1.5em;
-    }
-
-    form input, form textarea {
-      margin-top: 5px;
-      margin-bottom: 15px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-
-    form button {
-      font-size: 16px;
-    }
-
-    body {
-      background-color: #f9f7f4;
-    }
-
-    header {
+header {
   background: url('header_bg_compressed.jpg') no-repeat center center;
   background-size: cover;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   color: white;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
-
-      background-color: #c94d3f;
-      color: white;
-    }
-
-    nav a {
-      color: white;
-    }
-
-    section {
-      background: #ffffff;
-      padding: 3em 1em;
-      margin: 2em auto;
-      max-width: 1000px;
-      border-radius: 6px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.03);
-    }
-
-    h1, h2, h3 {
-      color: #c94d3f;
-    }
-
-    button {
-      background-color: #c94d3f;
-    }
-
-    footer {
-      background-color: #2f2f2f;
-    }
-
-    body {
-      font-family: 'Inter', sans-serif;
-      font-size: 16px;
-      color: #222;
-      line-height: 1.6;
-    }
-
-    h1, h2, h3 {
-      font-weight: 600;
-      color: #c94d3f;
-    }
-  </style>
+  text-align: center;
+  padding: 2rem;
+  text-shadow: 0 0 10px rgba(0,0,0,0.6);
+}
+</style>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-pW9z+T1N/VB5DrwEv2ZrxzK7flhA4kUK3Z0aS0AqN6UlGXY0uXzgDkDrFMeFQ51y0HJcKcsx+MEIpJbqN0V1yQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   
   
   <style>
-    form input, form textarea {
-      padding: 10px;
-      width: 100%;
-      font-family: 'Inter', sans-serif;
-    }
-
-    form button {
-      transition: background-color 0.3s ease;
-    }
-
-    form button:hover {
-      background-color: #a53c30;
-    }
-
-    button:hover {
-      background-color: #a53c30;
-    }
-
-    section h2 {
-      margin-bottom: 1.2em;
-    }
-
-    .section-title i {
-      transform: scale(1.2);
-      vertical-align: middle;
-    }
-
-    section {
-      padding: 4em 2em;
-      margin: 3em auto;
-      max-width: 960px;
-      background: #ffffff;
-      border-radius: 8px;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.04);
-    }
-
-    header, footer {
-      padding: 2.5em 1.5em;
-    }
-
-    form input, form textarea {
-      margin-top: 5px;
-      margin-bottom: 15px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-
-    form button {
-      font-size: 16px;
-    }
-
-    .section-title {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: all 0.6s ease-out;
-    }
-
-    .section-title.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    h2 i {
-      margin-right: 10px;
-      color: #c94d3f;
-    }
-  </style>
+header {
+  background: url('header_bg_compressed.jpg') no-repeat center center;
+  background-size: cover;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  text-shadow: 0 0 10px rgba(0,0,0,0.6);
+}
+</style>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       const options = {
