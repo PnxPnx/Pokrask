@@ -4,273 +4,40 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Безвоздушная покраска в Бресте</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-  
-  
-  
-  <style>
-header {
-  background: url('header_bg_compressed.jpg') no-repeat center center;
-  background-size: cover;
-  min-height: 70vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  color: white;
-  text-align: center;
-  padding: 2rem;
-  text-shadow: 0 0 10px rgba(0,0,0,0.6);
-}
-</style>
-
-  
-  
-  
-  <style>
-header {
-  background: url('header_bg_compressed.jpg') no-repeat center center;
-  background-size: cover;
-  min-height: 70vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  color: white;
-  text-align: center;
-  padding: 2rem;
-  text-shadow: 0 0 10px rgba(0,0,0,0.6);
-}
-</style>
-
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  
-  
-  
-  <style>
-header {
-  background: url('header_bg_compressed.jpg') no-repeat center center;
-  background-size: cover;
-  min-height: 70vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  color: white;
-  text-align: center;
-  padding: 2rem;
-  text-shadow: 0 0 10px rgba(0,0,0,0.6);
-}
-</style>
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-pW9z+T1N/VB5DrwEv2ZrxzK7flhA4kUK3Z0aS0AqN6UlGXY0uXzgDkDrFMeFQ51y0HJcKcsx+MEIpJbqN0V1yQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
-  
-  <style>
-header {
-  background: url('header_bg_compressed.jpg') no-repeat center center;
-  background-size: cover;
-  min-height: 70vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  color: white;
-  text-align: center;
-  padding: 2rem;
-  text-shadow: 0 0 10px rgba(0,0,0,0.6);
-}
-</style>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const options = {
-        threshold: 0.1
-      };
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-          }
-        });
-      }, options);
-      document.querySelectorAll('.section-title').forEach(el => observer.observe(el));
-    });
-  </script>
-
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <title>Безвоздушная покраска</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet">
 </head>
-
-
-
-
 <body>
-
-  <header>
-    <h1>Безвоздушная покраска</h1>
-    <p>Брест и область — быстро и качественно</p>
-    <nav>
-      <a href="#about">О нас</a>
-      <a href="#services">Услуги</a>
-      <a href="#steps">Этапы</a>
-      <a href="#faq">Вопросы</a>
-      <a href="#consultation">Консультация</a>
-      <a href="#contacts">Контакты</a>
-    </nav>
+  <header class="hero">
+    <div class="hero-overlay">
+      <h1>Безвоздушная покраска</h1>
+      <p>Быстро. Аккуратно. Профессионально.</p>
+      <a href="#contact" class="cta-button">Получить консультацию</a>
+    </div>
   </header>
 
-  <section id="about" class="animate">
-    <h2 class='section-title'><i class='fas fa-users'></i>О нас</h2>
-    <p>Мы — молодая, но амбициозная команда, специализирующаяся на безвоздушной покраске промышленных объектов, складов и технических помещений. Несмотря на то, что мы только начинаем развиваться, за нашими плечами уже есть реальные объекты и довольные клиенты.</p>
-    <p>Мы ценим аккуратность, работаем слаженно и всегда остаёмся на связи с заказчиком. Чёткое выполнение сроков, внимание к деталям и гибкий подход — это то, что нас отличает.</p>
-  </section>
-
-  <section id="services" class="animate">
-    <h2>Услуги</h2>
-    <ul>
-      <li><strong>Промышленные помещения</strong> — стены, потолки, металлические и бетонные поверхности</li>
-      <li><strong>Склады и ангары</strong> — внутренняя и внешняя окраска с высокой скоростью выполнения</li>
-      <li><strong>Технические помещения и цеха</strong> — устойчивые покрытия, простота в уходе</li>
-      <li><strong>Подготовка поверхностей</strong> — зачистка, грунтовка, обеспыливание</li>
-    </ul>
-    <p>Также возможны нестандартные работы — уточняйте при звонке.</p>
-  </section>
-
-  <div class="banner">
-    <h3>Нужна покраска?</h3>
-    <p>Позвоните — обсудим задачу и предложим оптимальное решение.</p>
-    <a href="tel:+375298261020">Позвонить сейчас</a>
-  </div>
-
-  
-  <section id="materials" class="animate">
-    <h2>Материалы и техника</h2>
-    <p>Мы используем современное безвоздушное оборудование, которое обеспечивает равномерное и быстрое нанесение краски на большие площади.</p>
-    <p>В работе применяем только проверенные краски и грунты, подходящие под разные типы поверхностей — бетон, металл, дерево и др. Состав подбирается индивидуально, в зависимости от условий эксплуатации и требований к покрытию.</p>
-    <p>Все материалы экологичны, долговечны и безопасны для производственных помещений.</p>
-  </section>
-
-  
-  
-  <section id="workflow" class="animate">
-    <h2>Как мы работаем</h2>
-    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2em; text-align: center;">
-      <div style="flex: 1 1 200px;">
-        <img src="https://cdn-icons-png.flaticon.com/512/5976/5976622.png" alt="связь" width="60">
-        <p><strong>1. Связь</strong><br>Звонок или Telegram</p>
+  <section class="services">
+    <h2>Наши услуги</h2>
+    <div class="service-cards">
+      <div class="card">
+        <img src="img/icon-warehouse.png" alt="Склады">
+        <h3>Склады</h3>
       </div>
-      <div style="flex: 1 1 200px;">
-        <img src="https://cdn-icons-png.flaticon.com/512/1063/1063313.png" alt="оценка" width="60">
-        <p><strong>2. Оценка</strong><br>Выезд и расчёт стоимости</p>
+      <div class="card">
+        <img src="img/icon-factory.png" alt="Промышленные объекты">
+        <h3>Промышленные объекты</h3>
       </div>
-      <div style="flex: 1 1 200px;">
-        <img src="https://cdn-icons-png.flaticon.com/512/3602/3602123.png" alt="договор" width="60">
-        <p><strong>3. Договор</strong><br>Подписание условий</p>
+      <div class="card">
+        <img src="img/icon-spray.png" alt="Покраска">
+        <h3>Покраска стен и потолков</h3>
       </div>
-      <div style="flex: 1 1 200px;">
-        <img src="https://cdn-icons-png.flaticon.com/512/3004/3004613.png" alt="работа" width="60">
-        <p><strong>4. Работы</strong><br>Покраска по графику</p>
-      </div>
-      <div style="flex: 1 1 200px;">
-        <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" alt="сдача" width="60">
-        <p><strong>5. Сдача</strong><br>Чистый готовый объект</p>
-      </div>
-    
-      <p><strong>Какой тип краски используете?</strong><br>Подбираем под задачу — влагостойкие, антикоррозийные, износостойкие и другие, в зависимости от объекта.</p>
-      <p><strong>Нужно ли готовить помещение?</strong><br>Желательно убрать лишние предметы и обеспечить доступ к поверхностям. Остальное подготовим сами.</p>
-      <p><strong>Можно ли нанести несколько слоёв?</strong><br>Да, при необходимости наносим два и более слоёв с соблюдением технологии.</p>
     </div>
-  </section>
-
-
-    <h2>Как мы работаем</h2>
-    <ol>
-      <li><strong>Связь с нами</strong> — звонок или сообщение в Telegram</li>
-      <li><strong>Выезд и оценка</strong> — приезжаем, осматриваем объект, рассчитываем стоимость</li>
-      <li><strong>Подписание договора</strong> — фиксируем объём, сроки и стоимость работ</li>
-      <li><strong>Проведение покраски</strong> — начинаем работу строго по плану</li>
-      <li><strong>Сдача объекта</strong> — уборка и передача готового результата</li>
-    </ol>
-  </section>
-
-  <section id="steps" class="animate">
-
-
-    <h2>Этапы работ</h2>
-    <ol>
-      <li>Консультация и замер</li>
-      <li>Подбор материалов</li>
-      <li>Подготовка помещения</li>
-      <li>Покраска</li>
-      <li>Уборка и сдача объекта</li>
-    </ol>
-  </section>
-
-  <section id="faq" class="animate">
-    <h2>Вопрос-ответ</h2>
-    <div class="faq-item">
-      <strong>Сколько времени занимает покраска?</strong>
-      <p>Обычно от 1 до 3 дней, в зависимости от объема и подготовки.</p>
-    </div>
-    <div class="faq-item">
-      <strong>Какие материалы вы используете?</strong>
-      <p>Только проверенные бренды, подходящие под задачи клиента.</p>
-    
-      <p><strong>Какой тип краски используете?</strong><br>Подбираем под задачу — влагостойкие, антикоррозийные, износостойкие и другие, в зависимости от объекта.</p>
-      <p><strong>Нужно ли готовить помещение?</strong><br>Желательно убрать лишние предметы и обеспечить доступ к поверхностям. Остальное подготовим сами.</p>
-      <p><strong>Можно ли нанести несколько слоёв?</strong><br>Да, при необходимости наносим два и более слоёв с соблюдением технологии.</p>
-    </div>
-  </section>
-
-
-  <section id="consultation" class="animate">
-    <h2>Бесплатная консультация</h2>
-    <p>Оставьте заявку, и мы свяжемся с вами в течение 30 минут:</p>
-    <form>
-      <input type="text" placeholder="Ваше имя" required />
-      <input type="tel" placeholder="Телефон" required />
-      <textarea placeholder="Комментарий (необязательно)"></textarea>
-      <button class="button" type="submit">Отправить</button>
-    </form>
-  </section>
-
-  <section id="contacts" class="animate">
-    <h2>Контакты</h2>
-    <p>Телефон: <a href="tel:+375298261020">+375 (29) 826-10-20</a></p>
-    <p>Email: <a href="mailto:TriSoroki@yandex.by">TriSoroki@yandex.by</a></p>
-    <p>Город: Брест и область</p>
-    <a class="call-button" href="tel:+375298261020">Позвонить сейчас</a>
-    <a class="telegram-button" href="https://t.me/Mng_Dzmitrii" target="_blank">Написать в Telegram</a>
   </section>
 
   <footer>
-    &copy; 2025 Безвоздушная покраска. Все права защищены.
+    <p>Связь: +375298261020 | TriSoroki@yandex.by | Telegram: @Mng_Dzmitrii</p>
+    <a href="#" class="to-top">Наверх</a>
   </footer>
-
-  <script>
-    const animatedItems = document.querySelectorAll('.animate');
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.1 });
-
-    animatedItems.forEach(item => observer.observe(item));
-  </script>
-
-
-  <footer style="background: #333; color: white; text-align: center; padding: 2em 1em; margin-top: 4em;">
-    <p>&copy; 2025 Безвоздушная покраска | Брест и область</p>
-    <p>Тел: +375 29 826 10 20 | Email: TriSoroki@yandex.by | Telegram: @Mng_Dzmitrii</p>
-  </footer>
-
-  <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" 
-    style="position: fixed; bottom: 20px; right: 20px; padding: 10px 15px; border: none; background: #c94d3f; color: white; border-radius: 4px; cursor: pointer;">
-    ↑ Наверх
-  </button>
 </body>
-
 </html>
